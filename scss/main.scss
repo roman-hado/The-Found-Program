@@ -1,0 +1,7 @@
+.main {
+  display: flex;
+
+  @include for-mobile {
+    display: block;
+  }
+}

@@ -1,0 +1,7 @@
+@import 'variables';
+
+@mixin for-mobile {
+  @media (max-width: #{$desktop-start}px) {
+    @content;
+  }
+}

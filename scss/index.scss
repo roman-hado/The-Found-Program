@@ -1,0 +1,19 @@
+@import "normalize";
+@import "fonts";
+@import "mixins";
+@import "variables";
+@import "main";
+@import "program";
+@import "cards";
+@import "card";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Greycliff CF', sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+  overflow-x: hidden;
+}
