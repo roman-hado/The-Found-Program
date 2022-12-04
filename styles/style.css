@@ -242,6 +242,9 @@ table {
   }
 }
 
+.cards__bg--img {
+  width: 100%;
+}
 @media (max-width: 768px) {
   .cards__bg--img {
     width: 100%;
