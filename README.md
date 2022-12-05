@@ -3,10 +3,10 @@ Test task for The42
 
 
 Requirements:
-the section should be fixed at scroll
-we change the content in the locked section at each scroll action
-the color of the background object changes with the content change
-the switch of the content is also done upon the click on the following elements
+- the section should be fixed at scroll
+- we change the content in the locked section at each scroll action
+- the color of the background object changes with the content change
+- the switch of the content is also done upon the click on the following elements
 
 
 You can see demo link - [HERE](https://roman-hado.github.io/The-Found-Program/)
