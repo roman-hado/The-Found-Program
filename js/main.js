@@ -42,9 +42,10 @@ const setCardActiveClass = (cardId) => {
 
   prevActiveCard.classList.remove(activeCardClass);
   currentCard.classList.add(activeCardClass);
-
   prevActiveCard = currentCard;
 };
+
+let clickedButton = null;
 
 for (const button of factorButtons) {
   button.addEventListener('click', () => {
@@ -60,6 +61,7 @@ for (const button of factorButtons) {
     }
 
     prevActiveButton = button;
+    clickedButton = button;
   });
 }
 
@@ -72,13 +74,19 @@ for (let i = 0; i < factorCards.length; i++) {
     end: "end -50%",
 
     onEnter: () => {
-      handleChangeColors(factorButtons[i]);
-      prevActiveButton = factorButtons[i];
+      if (clickedButton === factorButtons[i] || !clickedButton) {
+        handleChangeColors(factorButtons[i]);
+        prevActiveButton = factorButtons[i];
+        clickedButton = null;
+      }
     },
 
     onEnterBack: () => {
-      handleChangeColors(factorButtons[i]);
-      prevActiveButton = factorButtons[i];
+      if (clickedButton === factorButtons[i] || !clickedButton) {
+        handleChangeColors(factorButtons[i]);
+        prevActiveButton = factorButtons[i];
+        clickedButton = null;
+      }
     }
   });
 }
