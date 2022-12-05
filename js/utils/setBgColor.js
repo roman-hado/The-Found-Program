@@ -1,5 +1,3 @@
-import gsap from '../../node_modules/gsap';
-
 export const setBgColor = (color) => {
   const bgs = document.getElementsByClassName('cards__bg--img');
 
