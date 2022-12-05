@@ -1,7 +1,3 @@
-import gsap from '../node_modules/gsap';
-import ScrollTrigger from '../node_modules/gsap/ScrollTrigger.js';
-import ScrollToPlugin from '../node_modules/gsap/ScrollToPlugin.js';
-
 import { defaultBtnColor, desktopStart } from './variables.js';
 import { getFactorBtnInfo } from './utils/getFactorBtnInfo.js';
 import { setBgColor } from './utils/setBgColor.js';
