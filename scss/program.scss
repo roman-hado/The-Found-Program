@@ -74,16 +74,10 @@
   padding: 0 24px 0 12px;
   height: 56px;
   cursor: pointer;
+  transition-duration: 0.1s;
 
   & > * {
-    transition-duration: 0.2s;
     opacity: 0.5;
-  }
-
-  &:hover {
-    & > * {
-      opacity: 1;
-    }
   }
 
   @include for-mobile {
@@ -94,6 +88,7 @@
 
 .program__button--is-active {
   font-weight: 700;
+  background-color: rgba(90, 88, 207, 0.15);
 
   & > * {
     opacity: 1;

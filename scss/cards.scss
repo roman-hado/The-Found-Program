@@ -22,6 +22,22 @@
   }
 }
 
+.cards__bg--desktop {
+  display: block;
+
+  @include for-mobile {
+    display: none;
+  }
+}
+
+.cards__bg--mobile {
+  display: none;
+
+  @include for-mobile {
+    display: block;
+  }
+}
+
 .cards__bg--img {
   width: 100%;
 
